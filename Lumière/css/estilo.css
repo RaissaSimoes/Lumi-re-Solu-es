@@ -1,0 +1,274 @@
+body{
+    font-family: 'Cinzel', sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2{
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+
+h3{
+    font-family: 'Cinzel', sans-serif;
+}
+
+.botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #062424;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #062424;
+
+}
+
+nav > a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: 32px;
+        font-family: 'Cinzel',sans-serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/header3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+header .botao{
+    margin-top: 255px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #062424;
+    color: #FFFFFF;
+}
+
+#sobre h2{
+    color: #FAF2E9;
+}
+
+#sobre h3{
+    color: #FAF2E9;
+}
+
+#sobre p{
+    font-size: 22px;
+    color: #FAF2E9;
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+}
+
+#sobre .botao{
+            background-color: #FAF2E9;
+            color: #000000;
+            margin-top: 20px;
+}
+
+#objetivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #FAF2E9;
+}
+
+#objetivos h2{
+    margin-bottom: 80px;
+    color: #AB7836;
+}
+
+#objetivos h3{
+    color: #AB7836;
+}
+
+#objetivos p{
+        font-size: 22px;
+        color: #AB7836;
+        max-width: 1000px;
+}
+
+#fundadoras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-color: #062424;
+}
+
+#fundadoras h2{
+    margin-bottom: 20px;
+    color: #FAF2E9;
+}
+
+#fundadora1 {
+    position: relative;
+
+}
+
+#fundadora1 #cat2 {
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;    
+}
+
+#fundadora1:hover #cat2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+#fundadora2 {
+    position: relative;
+}
+
+#fundadora2 #rai2 {
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;    
+}
+
+#fundadora2:hover #rai2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #FAF2E9;
+}
+
+#contato h2{
+    color: #000000;
+}
+
+#contato p{
+    color: #000000;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #062424;
+    color: #FFFFFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+footer .botao{
+    background-color: #f1f1f1;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre{
+        height: 1250px;
+        height: 130vh;
+        justify-content: center;
+        min-height: 1250px;
+    }
+
+    #sobre div{
+        width: 1310px;
+    }
+
+    #objetivos div{
+        width: 1310px;
+    }
+
+    #fundadoras h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1310px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+}
